@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 	</head>
 
 	<body class="is-preload">
@@ -21,7 +22,7 @@
 			</nav>
 
 		<!-- Home -->
-			<article id="top" class="wrapper style1", style="background-image: url('images/data.jpeg'); background-size: contain;">
+			<article id="top" class="wrapper style1", style="background-image: url('images/data.jpeg'); background-size: contain; background-color: rgba(255, 255, 255, 0.7);">
 				<div class="container">
 					
 					<div class="row">
@@ -39,7 +40,7 @@
 							</header>
 							<p>
 								I'm a Computer Science graduate student at the University of California, Riverside, with a passion for data engineering and machine learning. Here are some highlights of my journey so far</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+							<!-- <a href="#work" class="button large scrolly">Learn about what I do</a> -->
 						</div>
 					</div>
 				</div>
@@ -90,30 +91,66 @@
 						<header>
 							<h2>Projects</h2>
 						</header>
+						
 						<div class="row">
 							<div class="col-6">
+								<div class="technologies">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python" class="flip-logo">
+									  <img src="images/spark-logo-reverse.png" alt="Pyspark" class="fade-in-fade-out-logo">
+									  <img src="images/geopandas_logo.png" alt="Geopandas" class="fade-in-fade-out-logo">
+									  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/1712px-Amazon-S3-Logo.svg.png" alt="AWS S3" class="rotate-logo-horizontally">
+									  <img src="images/emr.png" alt="AWS EMR" class="flip-logo">
+									  <img src="images/AirflowLogo.png" alt="Apache Airflow" class="rotate-logo">
+									
+								  </div>
 								<h4>Field Efficiency and Route Efficiency Model</h4>
-								Problem Statement: Like every other job, agricultural jobs like harvesting, spraying, spreading etc have limited availability of resources. As usage of these resources increases, cost to the farmer increases. Raven products help in automating the field jobs. However there is a need to predict efficiency of a field and route taken, that can be achieved for particular job.
-								<br>Solution: 
-								<br>1. Processed Geospatial data multiple fields which was in three different data formats using Geopandas and Pyspark.
-								<br>2. Created transformations in Pyspark to merge data from three different formats (CSV, XML and SHP).
-								<br>3. Designed a PowerBI dashboard to view data and get insights for any selected field.
-								<br>4. Developed end-to-end pipeline which extracts data from AWS S3, loads and processes the data in AWS EMR and stores the tranformed data into AWS Athena.
-								<br>5. Built XGboost based Machine Learning model using scikit-learn which uses tranformed data and predicts route and field efficiency.
-								<br>6. Generated a visualized report to show internal working and validation of the blackbox model using model interpretation approaches(Partial Dependence, Shapley Values and Local Surrogate models).
-
+								<p>
+								Project Summary:
+								In this project, I developed a machine learning model to predict field and route efficiency for an agricultural field to optimize resource utilization and reduce costs.
+								<br>Tools and technologies used:
+								<ol> 
+								<li> Geopandas and Pyspark to process geospatial data in three different data formats (CSV, XML, and SHP)</li>
+								<li> PowerBI to create a dashboard to visualize the data and get insights for any selected field</li>
+								<li> AWS S3, EMR, and Athena to store and process the data</li>
+								<li> Scikit-learn to develop an XGboost based machine learning model to predict route and field efficiency</li>
+								<li> Model interpretation approaches (Partial Dependence, Shapley Values, and Local Surrogate models) to visualize the internal working and validation of the blackbox model</li>
+								</ol>
+								</p>
 								</div>
 								<div class="col-6">
-									<h4>Field Efficiency and Route Efficiency Model</h4>
-									Problem Statement: Like every other job, agricultural jobs like harvesting, spraying, spreading etc have limited availability of resources. As usage of these resources increases, cost to the farmer increases. Raven products help in automating the field jobs. However there is a need to predict efficiency of a field and route taken, that can be achieved for particular job.
-									<br>Solution: 
-									<br>1. Processed Geospatial data multiple fields which was in three different data formats using Geopandas and Pyspark.
-									<br>2. Created transformations in Pyspark to merge data from three different formats (CSV, XML and SHP).
-									<br>3. Designed a PowerBI dashboard to view data and get insights for any selected field.
-									<br>4. Developed end-to-end pipeline which extracts data from AWS S3, loads and processes the data in AWS EMR and stores the tranformed data into AWS Athena.
-									<br>5. Built XGboost based Machine Learning model using scikit-learn which uses tranformed data and predicts route and field efficiency.
-									<br>6. Generated a visualized report to show internal working and validation of the blackbox model using model interpretation approaches(Partial Dependence, Shapley Values and Local Surrogate models).
-	
+									<div class="technologies">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python" class="flip-logo">
+										  <img src="images/spark-logo-reverse.png" alt="Pyspark" class="fade-in-fade-out-logo">
+										  <img src="images/Pytest_logo.svg.png" alt="Pytest" class="rotate-logo-horizontally">
+										  <img src="images/unittest.png" alt="Unit Test" class="fade-in-fade-out-logo">
+										  <!-- <img src="https://www.zuar.com/blog/content/images/2022/02/emr.png" alt="AWS EMR">
+										  <img src="images/AirflowLogo.png" alt="Apache Airflow" class="rotate-logo"> -->
+										
+									  </div>
+									<h4>Unit testing framework setup for Pyspark applications</h4>
+									Project Summary: 
+									Developed a unit testing framework for PySpark applications, which makes it easier to write and execute tests for complex PySpark code.
+									<p>
+										<ol> 
+											<li>Tools and technologies used:
+												<ol>
+													<li>Python unit test module to create mock tests for core modules</li>
+													<li>Pytest to create data validation tests</li>
+													<li>Spark JVM to log messages at different levels</li>
+												</ol>
+											</li>
+											<li> Key Highlights:
+												<ol>
+													<li>The framework divides unit testing into two parts: mock tests and data validation tests.</li>
+													<li>Mock tests can be executed without a Spark environment or session, making them faster to run.</li>
+													<li>Data validation tests use Pytest to test the output of Pyspark functions against expected results.</li>
+													<li>The framework can be executed using Pytest to simplify unit testing.</li>
+													<li>A logging utility class was developed to log messages at different levels using Spark JVM.</li>
+												</ol>
+											</li>
+											
+											</ol>
+									</p>
 									</div>	
 						</div>
 						</div>
@@ -131,7 +168,7 @@
 						<div class="col-6">
 							
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/field.jpeg" alt="" height="390"/></a>
 								<h3><a href="#" class="raven">Data Engineer Intern</a></h3>
 								<h4><small> June 2023 - September 2023</small></h4>
 								<p><h5>Raven Industries, US	<h5></p>
@@ -140,7 +177,7 @@
 						</div>
 						<div class="col-6">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/tire.jpeg" alt="" height="390"/></a>
 								<h3><a href="#">Data Engineer</a></h3>
 								<h4><small> December 2020 - August 2022</small></h4>
 								<p><h5>Michelin, India<h5></p>
